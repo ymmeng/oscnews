@@ -1,0 +1,33 @@
+{
+  "name": "oscnews",
+  "version": "1.14.0",
+  "description": "查看开源中国软件更新资讯，内置文档导航，GitHub 趋势榜，linux命令索引，浏览历史记录和时钟页面。",
+  "icons": {
+    "128": "osc-logo.png"
+  },
+  "permissions": [
+    "*://*/*",
+    "tabs",
+    "unlimitedStorage",
+    "storage",
+    "history",
+    "chrome://favicon/",
+    "management",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "",
+    "default_icon": "osc-logo.png"
+  },
+  "offline_enabled": true,
+  "manifest_version": 2,
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
